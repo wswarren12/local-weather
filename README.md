@@ -33,6 +33,7 @@ You can also just double-click `index.html` — but see [Caveats](#caveats) belo
 | `app.js` | Open-Meteo fetch, WMO code → icon mapping, unit toggle, `localStorage` |
 | `README.md` | This file |
 | `CLAUDE.md` | Project conventions + architecture opt-out note |
+| `LICENSE` | MIT |
 
 ## How it works
 
@@ -54,6 +55,10 @@ to a label and an emoji via the `WMO` lookup table. Timezone is resolved automat
   and `node --check app.js` passes. The failure branches (unknown city, denied location
   permission, network error) are written but were not exercised.
 - **Precipitation is always inches**, regardless of the °F/°C toggle.
+
+## License
+
+[MIT](LICENSE) © 2026 William Warren.
 
 ## Credits
 
@@ -178,5 +183,8 @@ and file contents are summarized rather than pasted in full, since the files the
 this repo. The narrative connective text between quotes was written for this README and was not
 part of the original conversation.
 
-The open item from step 3 still stands: **there is no `LICENSE` file**, so this code remains
-all-rights-reserved by default.
+### 5. License
+
+> **User:** yes use MIT
+
+An MIT `LICENSE` file was added, closing the open item from step 3.
