@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Local Weather</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Local Weather</h1>
+      <form id="search-form">
+        <input id="query" type="text" placeholder="City name…" autocomplete="off" />
+        <button type="submit">Search</button>
+        <button type="button" id="locate">Use my location</button>
+      </form>
+    </header>
+
+    <p id="status" class="status">Locating…</p>
+
+    <section id="current" class="current hidden">
+      <div class="place">
+        <h2 id="place-name"></h2>
+        <p id="observed"></p>
+      </div>
+      <div class="now">
+        <span id="icon" class="icon"></span>
+        <span id="temp" class="temp"></span>
+      </div>
+      <p id="condition" class="condition"></p>
+      <ul class="stats">
+        <li><span>Feels like</span><strong id="feels"></strong></li>
+        <li><span>Humidity</span><strong id="humidity"></strong></li>
+        <li><span>Wind</span><strong id="wind"></strong></li>
+        <li><span>Precip</span><strong id="precip"></strong></li>
+      </ul>
+    </section>
+
+    <section id="hourly-section" class="hidden">
+      <h3>Next 12 hours</h3>
+      <div id="hourly" class="hourly"></div>
+    </section>
+
+    <section id="daily-section" class="hidden">
+      <h3>7-day forecast</h3>
+      <ul id="daily" class="daily"></ul>
+    </section>
+
+    <footer>
+      <button id="unit-toggle" type="button">Switch to °C</button>
+      <span class="credit">Data: <a href="https://open-meteo.com" target="_blank" rel="noreferrer">Open-Meteo</a></span>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
